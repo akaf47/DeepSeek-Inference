@@ -174,3 +174,4 @@ cython_debug/
 .pypirc
 /.vs/
 /DeepSeek-Inference.pyproj.user
+/offload
