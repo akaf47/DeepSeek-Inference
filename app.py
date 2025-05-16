@@ -2,7 +2,11 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_name = "deepseek-ai/deepseek-llm-7b-base"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    device_map="auto",
+    use_safetensors=True
+)
 
 input_text = "Explain AI in simple terms."
 inputs = tokenizer(input_text, return_tensors="pt").to("cuda")
