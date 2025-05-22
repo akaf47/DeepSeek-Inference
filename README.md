@@ -31,9 +31,14 @@ cd DeepSeek-Inference
 
 ### 2. Install Dependencies
 # Create and activate virtual environment (recommended)
+<pre>
 python -m venv venv
 source venv/bin/activate  # Linux/macOS
+</pre>
+
+<pre>
 .\venv\Scripts\activate   # Windows
+</pre>
 
 # Install requirements
 pip install -r requirements.txt
