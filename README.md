@@ -50,17 +50,28 @@ pip install -r requirements.txt
 
 You can override default values with these example commands:
 
-- **Override the prompt and model:**
-	- python app.py --prompt "What is machine learning?" --model deepseek-ai/deepseek-llm-7b
+- **Override the prompt and model:**  
+  <pre>
+	python app.py --prompt "What is AI?" --model deepseek-ai/deepseek-llm-67b-base
+  </pre>
 
-- **Override the maximum number of tokens generated:**
-	- python app.py --prompt "Summarize the history of AI." --max_tokens 200
+- **Override the maximum number of tokens generated:**  
+  <pre>
+	python app.py --prompt "Summarize the history of AI." --max_tokens 200
+  </pre>
 
-- **Use a specific device (CPU):**
-	- python app.py --prompt "List AI applications." --device cpu
+- **Use a specific device (CPU):**  
+  <pre>
+	python app.py --prompt "List AI applications." --device cpu
+  </pre>
 
-- **Specify a custom offload folder:**
-	- python app.py --prompt "Explain neural networks." --offload_folder ./my_offload_dir
+- **Specify a custom offload folder:**  
+  <pre>
+	python app.py --prompt "Explain neural networks." --offload_folder ./my_offload_dir
+  </pre>
 
-- **Override all arguments at once:**
-	- python app.py --prompt "Describe reinforcement learning." --model deepseek-ai/deepseek-llm-7b --max_tokens 150 --device cuda --offload_folder ./custom_offload
+- **Override all arguments at once:**  
+  <pre>
+	python app.py --prompt "Describe reinforcement learning." --model deepseek-ai/deepseek-llm-7b-base --max_tokens 150 --device cuda --offload_folder ./custom_offload
+  </pre>
+  
